@@ -1,5 +1,53 @@
-.header {
-  width: 1920px;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-size: 24px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 1556px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 234px;
+  height: 45px;
+}
+
+.nav {
+  padding: 32px 182px;
+  position: relative;
+  z-index: 2;
+}
+
+.nav__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,47 +57,63 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px 182px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
 }
 
-.logo {
-  width: 234px;
-  height: 45.608px;
-}
-
-.header__img {
-  background-image: url(../../../../img/fone.png);
-  background-size: cover;
-  background-position: center;
-  height: 1194px;
-}
-
-.menu {
+.navigation-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  color: #FFF;
-  font-family: Rubik;
-  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.navigation-list li:not(:last-child) {
+  margin-right: 32px;
+}
+.navigation-list a {
+  color: #fff;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
-  gap: 32px;
+  font-size: 20px;
+}
+.navigation-list a:hover {
+  text-decoration: underline;
+  font-weight: 500;
+  color: #FF7757;
 }
 
-.body {
-  margin: 0 auto;
+.header {
+  width: 100%;
 }
 
-.header__button {
+.header--img {
+  height: 1194px;
+  width: 100%;
+  background-image: url(../img/fone.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__title {
+  position: relative;
+  color: #fff;
+  font-size: 84px;
+  font-weight: 400;
+  width: 900px;
+  margin-top: 142px;
+}
+
+.header__subtitle {
+  position: relative;
+  color: #fff;
+  margin-top: 16px;
+}
+
+.button {
   padding: 20px 32px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -58,19 +122,111 @@
       -ms-flex-align: center;
           align-items: center;
   color: #FFF;
-  font-family: Rubik;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   border-radius: 12px;
   background: #FF7757;
-  cursor: pointer;
+}
+.button:hover {
+  background: #fa7050;
 }
 
-.header__button-login {
+.button-login {
   background-color: Transparent;
   background-repeat: no-repeat;
-  border: none;
   overflow: hidden;
+}
+.button-login:hover {
+  background: none;
+  color: #FF7757;
+}
+
+.button__form {
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-image: url(../../img/Arrow\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 170px;
+  padding-left: 40px;
+  width: 1320px;
+  height: 216px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-colums {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  width: 1021px;
+  height: 68px;
+}
+
+.form-colum {
+  width: 225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 12px;
+}
+
+.form__title {
+  color: #767E86;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.form-input {
+  width: 225px;
+  height: 34px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  color: #172432;
+  font-family: Playfair Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

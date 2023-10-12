@@ -1,0 +1,48 @@
+.button {
+    padding: 20px 32px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 12px;
+    background: $accent-color;
+
+    &:hover {
+        background: #fa7050;
+    }
+}
+
+.button-login {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    &:hover {
+        background: none;
+        color: $accent-color;
+    }
+}
+
+.button__form {
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-image: url(../../img/Arrow\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+
+    // &::before {
+    //     position: absolute;
+    //     top: 20px;
+    //     left: 20px;
+    //     content: '';
+    //     display: block;
+    //     width: 21px;
+    //     background-image: url(../../img/Arrow\ 1.svg);
+    // }
+}

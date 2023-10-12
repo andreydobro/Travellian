@@ -1,0 +1,29 @@
+.header {
+   width: 100%;
+}
+
+.header--img {
+    height: 1194px;
+    width: 100%;
+    background-image: url(../img/fone.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header__title {
+    position: relative;
+    color: #fff;
+    font-size: 84px;
+    font-weight: 400;
+    width: 900px;
+    margin-top: 142px;
+}
+
+.header__subtitle {
+    position: relative;
+    color: #fff;
+    margin-top: 16px;
+}

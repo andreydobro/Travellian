@@ -1,0 +1,25 @@
+.navigation-list {
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    li:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    a {
+        color: #fff;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 20px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        font-weight: 500;
+        color: $accent-color;
+    }
+}
